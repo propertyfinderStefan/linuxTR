@@ -4,12 +4,12 @@
 cd /tmp
 wget https://desktop-central.s3-ap-southeast-1.amazonaws.com/linuxTR.zip
 unzip linuxTR.zip
-chmod +x DesktopCentral_LinuxAgent.bin
-./DesktopCentral_LinuxAgent.bin
+sudo chmod +x DesktopCentral_LinuxAgent.bin
+sudo ./DesktopCentral_LinuxAgent.bin
 
 cp DMRootCA-Server.crt /usr/local/share/ca-certificates/DMRootCA-Server.crt
 cp DMRootCA.crt /usr/local/share/ca-certificates/DMRootCA.crt
-update-ca-certificates
+sudo update-ca-certificates
 
 rm DesktopCentral_LinuxAgent.bin
 rm DMRootCA-Server.crt
